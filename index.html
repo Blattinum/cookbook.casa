@@ -29,6 +29,17 @@
             align-items: center;
         }
 
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header h1{
+            font-size: 5.0rem;
+        }
+
         .page-content {
             width: 75%;
             display: flex;
@@ -44,6 +55,16 @@
 <body>
 
 <div class="page-content">
+
+    <header>
+        <h1>cookbook.casa 📖</h1>
+
+        <nav>
+            <a href="#">Home</a> &#124; <a href="./recipes/">Recipes</a>
+        </nav>
+
+    </header>
+
     
     <div itemscope itemtype="https://schema.org/Recipe">
         <h1 itemprop="name">Mom's World Famous Banana Bread</h1>
